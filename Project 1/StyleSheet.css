@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.box {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.logo {
+    box-align: left;
+    width:40%;  
+}
+.name {
+    height: 75px;
+    width: 45%;
+    text-align: right;
+}
+span {
+    display: block;
+}
+.Sky {
+    width: 100%;   
+}
+@media (max-width: 360px) {
+    .logo {
+        width:20%
+    }
+    .name {
+        width: 80%;
+    }
+    .Rhino, .Shark, .land {
+        width: 90%; 
+    }
+    p {
+        width:10%;
+    }
+}
+@media (min-width: 361px) {
+    .logo {
+        width:30%
+    }
+    .name {
+        width: 70%;
+    }
+    .Rhino, .Shark {
+        width: 40%;
+       }
+    .land {
+        width: 80%;
+    }
+    p {
+        width:10%;
+    }
+}
+@media (min-width: 769px) {
+    .logo {
+        width:40%
+    }
+    .name {
+        width: 60%;
+    }
+    .Rhino, .Shark, .land {
+    width: 28%;
+}
+    p {
+        width:5%;
+    }
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+}
